@@ -1,0 +1,9 @@
+int numberPeople;
+            int queueTime;
+            int receptionTime = 10 ;
+            Console.Write(" Введите количество людей находящихся в очереди: ");
+            numberPeople = Convert.ToInt32(Console.ReadLine());
+            queueTime  = numberPeople * receptionTime;
+            int hours = queueTime / 60;
+            int min = queueTime % 60;
+            Console.WriteLine($"Время которое вам нужно отстоять в очереди составит: {hours} ч. {min} мин.");
