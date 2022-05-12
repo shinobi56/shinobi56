@@ -1,0 +1,12 @@
+int money;
+            int crystals;
+            int crystalsPrice = 5;
+            Console.WriteLine($" Добро пожаловать в наш магазин! Кристалы сегодня по {crystalsPrice} золотых ");
+            Console.Write(" Какое количество кристалов вы хотите приобрести: ");
+            money = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" Сколько у вас золота:");
+            crystals = Convert.ToInt32(Console.ReadLine());
+            money -= crystals * crystalsPrice;
+
+            Console.Write($" У вас в сумке: {crystals} кристалов и {money} монет ");
+            Console.WriteLine();
