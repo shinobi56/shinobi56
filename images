@@ -1,0 +1,8 @@
+int picture = 52;
+            int row = 3;
+            int filledRow;
+            int beyondMasure;
+            filledRow =  picture / row;
+            beyondMasure =  picture - filledRow * row ;
+            Console.WriteLine($" Количество полностью заполненных рядов равна {filledRow}." +
+                $" А количество картинок сверх меры равна {beyondMasure}");
