@@ -1,0 +1,31 @@
+using System;
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string userInput = "" ;
+            string programmExitWords = "exit";
+            int factor = 5;
+            int productMultiplication;
+
+            while ( userInput != programmExitWords )
+            {
+                Console.WriteLine("Введите число, которое хотите умножить на 5:");
+                userInput = Console.ReadLine();
+
+                if (userInput == programmExitWords)
+                {
+                    
+                    Console.WriteLine("Программа заверешна.");
+                    break;
+                }
+
+                productMultiplication = factor * Convert.ToInt32(userInput);
+                Console.WriteLine(productMultiplication);
+            }
+        }
+
+    }
+}
